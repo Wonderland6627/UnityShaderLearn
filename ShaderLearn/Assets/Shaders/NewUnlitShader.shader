@@ -28,8 +28,12 @@
 
 			struct appdata
 			{
-				float4 vertex : POSITION;
-				float2 uv : TEXCOORD;
+				float4 vertex : POSITION;	//顶点
+				float4 tangent : TANGENT;	//切线
+				float3 normal : NORMAL;		//法线
+				float4 texcoord : TEXCOORD0;//UV1
+				float4 color : COLOR;		//顶点色
+				float2 uv : TEXCOORD1;
 			};
 
 			struct v2f
@@ -48,7 +52,7 @@
 
 			fixed checker(float2 uv)
 			{
-				float2 repeatUV = uv * 10;
+				float2 repeatUV = uv * 20;
 				float2 c = floor(repeatUV) / 2;
 				float checker = frac(c.x + c.y) * 2;
 
