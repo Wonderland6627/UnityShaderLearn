@@ -1,0 +1,8 @@
+﻿  RT2.cpp
+d:\baselearn\rtframe\rtframe\rt2.cpp(364): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+d:\baselearn\rtframe\rtframe\rt2.cpp(585): error C2259: “Cube”: 不能实例化抽象类
+  d:\baselearn\rtframe\rtframe\rt2.cpp(585): note: 由于下列成员:
+  d:\baselearn\rtframe\rtframe\rt2.cpp(585): note: “bool IHitable::HitTest(const Ray &,Hit *)”: 是抽象的
+  d:\baselearn\rtframe\rtframe\rt2.cpp(199): note: 参见“IHitable::HitTest”的声明
+d:\baselearn\rtframe\rtframe\rt2.cpp(586): error C2664: “void HitableList::Add(IHitable *)”: 无法将参数 1 从“Cube”转换为“IHitable *”
+  d:\baselearn\rtframe\rtframe\rt2.cpp(586): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
